@@ -10,7 +10,7 @@ public class CsvXYReaderTest {
 
     @Test
     void readsTwoColumnsWithHeader() throws Exception {
-        var url = getClass().getResource(filename);
+        var url = getClass().getResource("/data.csv");
         assertNotNull(url, "data.csv should be on test classpath");
         var path = Paths.get(url.toURI());
 
