@@ -28,6 +28,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file LabFisicaJava-main/pom.xml -DskipTests
+      run: mvn -B package --file LabFisicaJava-main/pom.xml 
 
 
