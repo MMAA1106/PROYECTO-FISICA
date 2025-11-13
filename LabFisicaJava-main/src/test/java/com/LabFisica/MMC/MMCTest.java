@@ -13,14 +13,14 @@ public class MMCTest {
 
     @Test
     void mmcCoeffAndErr() throws Exception {
-<<<<<<< HEAD
+
         var url = getClass().getResource("/tabla1.csv");
         assertNotNull(url, "data.csv should be on test classpath");
-=======
+
         // Cargar el CSV
         var url = getClass().getResource("/tabla1.csv");
         assertNotNull(url, "El archivo CSV debe estar en la ruta de test classpath");
->>>>>>> f233d0b (Archivo Subido)
+        f233d0b (Archivo Subido)
         var path = Paths.get(url.toURI());
 
         XYData xy = CsvXYReader.read(path);
