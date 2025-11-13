@@ -18,8 +18,8 @@ public class CsvXYReaderTest {
 
         assertEquals("X", xy.xName);
         assertEquals("Y", xy.yName);
-        assertEquals(5, xy.x.length);
-        assertArrayEquals(new double[]{1,3,5,7,9}, xy.x);
-        assertArrayEquals(new double[]{2,4,6,8,10}, xy.y);
+        assertEquals(6, xy.x.length);
+        assertArrayEquals(new double[]{0.0, 0.2, 0.4, 0.6, 0.8, 1.0}, xy.x, 1e-9);
+        assertArrayEquals(new double[]{1.0, 0.951, 0.809, 0.588, 0.309, 0.0}, xy.y, 1e-9);
     }
 }
