@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import org.junit.jupiter.api.Test;
 
 public class CsvXYReaderTest {
-    String filename = "/data.csv";
+    String filename = "/tabla1.csv";
 
     @Test
     void readsTwoColumnsWithHeader() throws Exception {
