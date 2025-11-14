@@ -19,7 +19,6 @@ public class MMCTest {
 
         XYData xy = CsvXYReader.read(path);
 
-    
         assertEquals(xy.x.length, xy.y.length, "X e Y deben tener la misma cantidad de datos");
         assertTrue(xy.x.length > 0, "Debe haber al menos un valor en X e Y");
 
@@ -31,6 +30,6 @@ public class MMCTest {
         assertFalse(Double.isNaN(mmc.B), "MMC.B no debe ser NaN");
         assertFalse(Double.isNaN(mmc.A_err), "MMC.A_err no debe ser NaN");
         assertFalse(Double.isNaN(mmc.B_err), "MMC.B_err no debe ser NaN");
-}
+    }
 
 }
