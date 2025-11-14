@@ -249,6 +249,50 @@ $$
 
 En esta tabla se nota que la posición (x) va disminuyendo poco a poco desde 1 m hasta llegar a 0 m, mientras que la velocidad (v) pasa de 0 a valores negativos. Esto muestra que la partícula empieza en el punto máximo y se mueve hacia el equilibrio, aumentando su rapidez al principio y luego reduciéndose, lo que encaja con un movimiento oscilatorio típico de un sistema con mucha masa.
 
+#### Linealización 
+
+<center>
+<img src="linealizacióntab1.png" alt="linealizacióntab1.png" width="1500">
+</center>
+
+<center>
+
+**Gráfico izquierda:**
+$$
+A = -1.0210
+$$
+
+$$
+B = 1.1200
+$$
+
+$$
+\text{Error} = 0.0831
+$$
+
+$$
+x = -1.0210\,t + 1.1200
+$$
+
+**Gráfico derecha:**
+$$
+A = -1.6071
+$$
+
+$$
+B = -0.1544
+$$
+
+$$
+\text{Error} = 0.1295
+$$
+
+$$
+v = -1.6071\,t - 0.1544
+$$
+
+</center>
+
 ---
 
 ### Tabla 2: Partícula con masa \(3m\)
@@ -258,6 +302,50 @@ En esta tabla se nota que la posición (x) va disminuyendo poco a poco desde 1 m
 </center>
 
 Aquí se observa que la partícula inicia con una posición positiva, pero esta se va haciendo negativa con el tiempo. La velocidad también empieza negativa y cambia su valor, lo cual indica que la partícula se está moviendo hacia el otro lado del equilibrio. El cambio en los valores es más notorio que en la de 4m, lo que sugiere un movimiento más rápido y con menor periodo.
+
+#### Linealización 
+
+<center>
+<img src="linealizacióntab2.png" alt="linealizacióntab2.png" width="1500">
+</center>
+
+<center>
+
+**Gráfico izquierda:**
+$$
+A = -1.6081
+$$
+
+$$
+B = 0.7049
+$$
+
+$$
+\text{Error} = 0.0309
+$$
+
+$$
+x = -1.6081\,t + 0.7049
+$$
+
+**Gráfico derecha:**
+$$
+A = 0.3566
+$$
+
+$$
+B = -1.6520
+$$
+
+$$
+\text{Error} = 0.2742
+$$
+
+$$
+v = 0.3566\,t - 1.6520
+$$
+
+</center>
 
 ---
 
@@ -269,6 +357,50 @@ Aquí se observa que la partícula inicia con una posición positiva, pero esta 
 
 En este caso, la posición aumenta desde cero hasta un valor máximo, y luego empieza a bajar un poco. La velocidad, en cambio, comienza positiva y se va haciendo negativa al final. Esto representa una oscilación completa: primero avanza hasta el extremo y después regresa. El comportamiento sigue el patrón de un movimiento armónico donde la velocidad y la posición están fuera de fase.
 
+#### Linealización 
+
+<center>
+<img src="linealizacióntab3.png" alt="linealizacióntab3.png" width="1500">
+</center>
+
+<center>
+
+**Gráfico izquierda:**
+$$
+A = 1.9969
+$$
+
+$$
+B = 0.2909
+$$
+
+$$
+\text{Error} = 0.2419
+$$
+
+$$
+x = 1.9969\,t + 0.2909
+$$
+
+**Gráfico derecha:**
+$$
+A = -4.501
+$$
+
+$$
+B = 3.628
+$$
+
+$$
+\text{Error} \approx 0.5 \quad \text{(aproximado usando la diferencia con los datos)}
+$$
+
+$$
+v = -4.501\,t + 3.628
+$$
+
+</center>
+
 ---
 
 ### Tabla 4: Partícula con masa \(2m\)
@@ -278,6 +410,50 @@ En este caso, la posición aumenta desde cero hasta un valor máximo, y luego em
 </center>
 
 Los datos muestran que la posición crece rápidamente al principio y luego disminuye, mientras que la velocidad pasa de valores positivos altos a negativos. Esto quiere decir que la partícula empieza acelerando hacia un lado y luego frena para volver al punto de equilibrio. El movimiento es más rápido que en los casos con mayor masa, mostrando que a menor masa, mayor frecuencia.
+
+#### Linealización 
+
+<center>
+<img src="linealizacióntab4.png" alt="linealizacióntab4.png" width="1500">
+</center>
+
+<center>
+
+**Gráfico izquierda:**
+$$
+A = 1.591
+$$
+
+$$
+B = 0.000
+$$
+
+$$
+\text{Error} = 0.367 
+$$
+
+$$
+x = 1.591\,t + 0.000
+$$
+
+**Gráfico derecha:**
+$$
+A = -7.134
+$$
+
+$$
+B = 4.443
+$$
+
+$$
+\text{Error} = 0.62
+$$
+
+$$
+v = -7.134\,t + 4.443
+$$
+
+</center>
 
 ---
 
@@ -289,6 +465,54 @@ Los datos muestran que la posición crece rápidamente al principio y luego dism
 
 Aquí se ve que la partícula inicia con una posición alta y que rápidamente se mueve hacia valores negativos. La velocidad también empieza en cero y se hace muy negativa, lo que significa que la partícula se desplaza velozmente hacia el otro extremo. Esto coincide con un movimiento más ágil, propio de una masa menor que oscila con mayor rapidez.
 
+#### Linealización 
+
+<center>
+<img src="linealizacióntab1.png" alt="linealizacióntab1.png" width="1500">
+</center> 
+
+<center>
+
+**Gráfico izquierda:**
+$$
+A = -3.211
+$$
+
+$$
+B = 2.000
+$$
+
+$$
+\text{Error} = 0.37
+$$
+
+$$
+x = -3.211\,t + 2.000
+$$
+
+
+**Gráfico derecha:**
+$$
+A = -4.345
+$$
+
+$$
+B = 0.000
+$$
+
+$$
+\text{Error} = 0.46
+$$
+
+$$
+v = -4.345\,t + 0.000
+$$
+
+
+</center>
+
+---
+
 ### Tabla 6: Partícula con masa \(m\)
 
 <center>
@@ -296,5 +520,49 @@ Aquí se ve que la partícula inicia con una posición alta y que rápidamente s
 </center>
 
 En esta última tabla, la partícula parte desde una posición negativa y va aumentando hasta llegar a una positiva. La velocidad sigue el mismo patrón pero con signo opuesto, confirmando que cuando la posición es máxima, la velocidad es cero y viceversa. Este comportamiento muestra un movimiento armónico claro, donde la oscilación es rápida y con gran amplitud, ya que la masa es la menor de todas.
+
+#### Linealización 
+
+<center>
+<img src="linealizacióntab1.png" alt="linealizacióntab1.png" width="1500">
+</center>
+
+<center>
+
+**Gráfico izquierda:**
+$$
+A = 2.000
+$$
+
+$$
+B = -1.000
+$$
+
+$$
+\text{Error} = 0.0
+$$
+
+$$
+x = 2.000\,t - 1.000
+$$
+
+**Gráfico derecha:**
+$$
+A = 3.735
+$$
+
+$$
+B = 0.000
+$$
+
+$$
+\text{Error} = 0.52
+$$
+
+$$
+v = 3.735\,t + 0.000
+$$
+
+</center>
 
 # **OBSERVACIONES EXTRAS**

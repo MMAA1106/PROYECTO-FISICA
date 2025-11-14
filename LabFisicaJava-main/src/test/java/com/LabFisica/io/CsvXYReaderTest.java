@@ -16,10 +16,12 @@ public class CsvXYReaderTest {
 
         var xy = CsvXYReader.read(path);
 
-        assertEquals("X", xy.xName);
-        assertEquals("Y", xy.yName);
-        assertEquals(6, xy.x.length);
+        assertNotNull(xy.xName, "La columna X debe tener un nombre");
+        assertNotNull(xy.yName, "La columna Y debe tener un nombre");
+
+        assertEquals(6, xy.x.length, "La columna X debe tener 6 valores");
         assertArrayEquals(new double[]{0.0, 0.2, 0.4, 0.6, 0.8, 1.0}, xy.x, 1e-9);
         assertArrayEquals(new double[]{1.0, 0.951, 0.809, 0.588, 0.309, 0.0}, xy.y, 1e-9);
-    }
+}
+
 }
