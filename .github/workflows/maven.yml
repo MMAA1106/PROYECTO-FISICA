@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    # Ejecutar en múltiples sistemas operativos usando matrix
+    
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
