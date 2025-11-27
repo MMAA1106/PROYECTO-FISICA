@@ -18,17 +18,16 @@ public class CsvScatterPlot {
             System.exit(2);
         }
 
-        // Leer archivos
         XYData data1 = CsvXYReader.read(Path.of(args[0]));
         XYData data2 = CsvXYReader.read(Path.of(args[1]));
 
-        // Gráficos originales
+        
         XYChart chart1 = makePlot(data1, "Gráfico 1: " + data1.yName + " vs " + data1.xName);
         XYChart chart2 = makePlot(data2, "Gráfico 2: " + data2.yName + " vs " + data2.xName);
 
-        // ------------------------- LINEALIZACIÓN REAL -------------------------
-        XYData lin1 = linearizeAxB(data1);   // linealización archivo 1
-        XYData lin2 = linearizeAxB(data2);   // linealización archivo 2
+       
+        XYData lin1 = linearizeAxB(data1);   
+        XYData lin2 = linearizeAxB(data2);   
 
         XYChart chart1Lin = makePlot(
                 lin1.x,
@@ -46,13 +45,11 @@ public class CsvScatterPlot {
                 data2.yName
         );
 
-        // Mostrar 4 gráficos
+        
         showCharts(chart1, chart2, chart1Lin, chart2Lin);
     }
 
-    // ------------------------------------------------------------------------
-    //            ★ METODO DE LINEALIZACIÓN REAL: y = A x + B ★
-    // ------------------------------------------------------------------------
+
     public static XYData linearizeAxB(XYData data) {
 
         double[] x = data.x;
@@ -68,11 +65,11 @@ public class CsvScatterPlot {
             sumXX += x[i] * x[i];
         }
 
-        // Coeficientes A y B (regresión lineal)
+        
         double A = (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
         double B = (sumY - A * sumX) / n;
 
-        // Crear la recta
+        
         double[] yLine = new double[n];
         for (int i = 0; i < n; i++) {
             yLine[i] = A * x[i] + B;
@@ -81,12 +78,12 @@ public class CsvScatterPlot {
         return new XYData(x, yLine, data.xName, data.yName);
     }
 
-    // ------------------------- Gráfico desde XYData -------------------------
+    
     public static XYChart makePlot(XYData data, String titulo) {
         return makePlot(data.x, data.y, titulo, data.xName, data.yName);
     }
 
-    // ------------------------- Gráfico general -------------------------
+    
     public static XYChart makePlot(double[] xData, double[] yData,
                                    String title, String xTitle, String yTitle) {
 
@@ -105,7 +102,7 @@ public class CsvScatterPlot {
         return chart;
     }
 
-    // ------------------------- Mostrar matriz -------------------------
+    
     public static void showCharts(XYChart c1, XYChart c2, XYChart c3, XYChart c4) {
         List<XYChart> charts = Arrays.asList(c1, c2, c3, c4);
         new SwingWrapper<>(charts).displayChartMatrix();
