@@ -565,4 +565,107 @@ $$
 
 </center>
 
+## 5. Metodología para la Determinación de la Constante Elástica del Resorte y el Periodo de Oscilación
+
+Esta sección detalla la metodología utilizada para determinar la constante elástica del resorte **k** y el periodo de oscilación **T** para una masa \(9m\), basándose en seis conjuntos de datos experimentales mediante el **Principio de Conservación de la Energía** y el **Método de Mínimos Cuadrados (MMC)**.
+
+---
+
+## 5.1 Determinación de la Constante Elástica del Resorte, \(k\)
+
+### 5.1.1 Fundamento Teórico y Linealización
+
+En el **Movimiento Armónico Simple (MAS)**, la energía total del sistema es:
+
+$$
+E = E_p + E_k = \frac{1}{2} k x^2 + \frac{1}{2} M v^2
+$$
+
+Para obtener la constante elástica \(k\), se linealiza la ecuación a la forma \(Y = AX + B\):
+
+$$
+v^2 = \left( -\frac{k}{M} \right) x^2 + \left( \frac{2E}{M} \right)
+$$
+
+Donde:
+
+- \(Y = v^2\)  
+- \(X = x^2\)
+
+La pendiente queda definida como:
+
+$$
+A = -\frac{k}{M}
+$$
+
+El valor físico importante es el cociente **\(k/M\)**, asociado a \(w^2).
+
+---
+
+### 5.1.2 Metodología Experimental (Estandarización y Promedio Ponderado)
+
+**Ajuste MMC:**  
+Se aplicó un ajuste lineal a los datos (\(v^2\) vs. \(x^2\)) para obtener las pendientes \(A_i\) y sus errores \(\Delta A_i\).
+
+**Estandarización:**  
+Como las masas varían \((m, 2m, 3m, 4m)\), se ajustó cada pendiente al cociente \(k/m\):
+
+$$
+\left(\frac{k}{m}\right)_{\text{estandarizado}, i}
+= M_{\text{factor}, i}\left( -A_i \right)
+$$
+
+**Promedio ponderado:**  
+Se usaron los pesos \(w_i = 1 / (\Delta A_i)^2\).
+
+---
+
+### 5.1.3 Resultado Final de \(k\)
+
+Promedio ponderado obtenido:
+
+$$
+\overline{k/m} = 9.8722 \pm 0.0267 \ \text{s}^{-2}
+$$
+
+Constante elástica expresada con masa base \(m\):
+
+$$
+k = (9.87 \pm 0.03)\, m \ \text{N/m}
+$$
+
+---
+
+## 5.2 Determinación del Periodo de Oscilación para Masa \(9m\)
+
+### 5.2.1 Fundamento Teórico y Propagación del Error
+
+El periodo de oscilación de un sistema masa-resorte está dado por:
+
+$$
+T = 2\pi \sqrt{\frac{M}{k}}
+$$
+
+Para la masa \(M = 9m\):
+
+$$
+T_{9m} = 2\pi \sqrt{\frac{9}{k/m}}
+$$
+
+El error se propagó mediante:
+
+$$
+\Delta T = \frac{1}{2} T \frac{\Delta(k/m)}{k/m}
+$$
+
+---
+
+### 5.2.2 Resultado Final del Periodo
+
+Resultado representativo:
+
+$$
+T_{9m} = (5.993 \pm 0.008)\ \text{s}
+$$
+
 # **OBSERVACIONES EXTRAS**
